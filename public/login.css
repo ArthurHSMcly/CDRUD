@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#2563eb,#4f46e5,#7c3aed);
+}
+
+.login-box{
+    width:380px;
+    padding:40px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    border:1px solid rgba(255,255,255,.2);
+}
+
+.login-box h2{
+    text-align:center;
+    color:#fff;
+    margin-bottom:30px;
+    font-size:30px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    margin-bottom:18px;
+    border:none;
+    border-radius:10px;
+    background:rgba(255,255,255,.9);
+    font-size:15px;
+    transition:.3s;
+}
+
+input:focus{
+    outline:none;
+    box-shadow:0 0 8px rgba(255,255,255,.8);
+    transform:scale(1.02);
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#ffffff;
+    color:#4f46e5;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#e5e7eb;
+    transform:translateY(-2px);
+}
+
+button:active{
+    transform:translateY(0);
+}
+
+#mensagem{
+    text-align:center;
+    margin-top:18px;
+    color:#ffdddd;
+    font-weight:bold;
+}
+
+.login-box::before{
+    content:"👤";
+    display:block;
+    font-size:60px;
+    text-align:center;
+    margin-bottom:15px;
+}
